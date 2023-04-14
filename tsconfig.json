@@ -1,16 +1,28 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es6"],
-    "allowJs": true,
-    "outDir": "build",
-    "rootDir": "src",
-    "strict": true,
+    "outDir": "./dist",
+    "target": "es6",
+    "module": "ESNext",
+    "incremental": true,
+    "moduleResolution": "NodeNext",
+    "allowJs": false,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "types": ["node", "jest"],
-    "skipLibCheck": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "declaration": true,
+    "composite": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "lib": ["es2015", "es2017", "dom", "ESNext"],
+    "baseUrl": "src"
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.spec.ts"]
+  "include": ["src", "./package.json"],
+  "exclude": ["src/**/*.test.ts"]
 }
